@@ -1,0 +1,173 @@
+/* Estilo para el encabezado h1 */
+h1 {
+    font-family: cursive;
+    background-color: black;
+    color: white;
+    padding: 20px;
+  
+}
+
+/* Estilo para el botón de filtrado */
+.button {
+    font-family: cursive;
+    background-color:grey;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-left: 20px; /* Espacio entre el botón y el título */
+}
+
+
+/* Estilo para el contenedor principal */
+#container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+
+/* Estilo para las tarjetas de personajes */
+.card {
+    position: relative;
+    border: 5px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.5s, filter 0.5s; 
+}
+
+.card img {
+    border-radius: 20px;
+    transition: transform 0.5s, filter 0.5s;
+}
+
+.card h2 {
+    margin: 10px 0;
+    font-family: cursive;
+    color: black;
+    transition: transform 0.5s, filter 0.5s;
+}
+    
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card:hover img {
+    transform: scale(1.2) rotate(360deg); 
+    filter: grayscale(100%);
+}
+
+.card:hover h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+.card h2 {
+    margin: 10px 0;
+    font-family: cursive;
+    color: black;
+    transition: transform 0.5s, filter 0.5s;
+}
+    
+.card:hover h2 {
+    transform: scale(1.50); }
+
+
+.card p {
+    color: black;
+    font-family: cursive;
+    margin: 5px 0;
+}
+
+/* Estilo para los botones de paginas */
+.container-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.button-prevnext {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.pagination-button:hover {
+    background-color: black;
+}
+
+/* Estilo para los botones */
+.button {
+    font-family: cursive;
+    background-color:grey;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* Estilo para el pie de página */
+footer {
+    background-color: grey;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Estilo para el contenido del pie de página */
+.container-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilo para los íconos sociales en el pie de página */
+.logos{
+    display: flex;
+    margin-top: 10px; 
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilo para los íconos individuales */
+.logos img {
+    max-width: 40px; 
+    margin: 0px; 
+}
+
+
+/* Estilo para los botones de volver y siguiente*/
+.pagination {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.pagination-button {
+    font-family: cursive;
+    background-color: grey;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.pagination-button:hover {
+    background-color: grey;
+}
