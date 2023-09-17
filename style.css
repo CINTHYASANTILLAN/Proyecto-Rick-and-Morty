@@ -165,7 +165,7 @@ h1 {
     position: relative;
 }
 
-/* Animación para simular la escritura a máquina */
+/* para que sea como una maquina de escribir */
 @keyframes typing {
     from {
         width: 0;
@@ -175,7 +175,7 @@ h1 {
     }
 }
 
-/* Animación de escribir letra por letra a los párrafos */
+/* para eccribir letra por letra */
 .card-info p:nth-child(1) {
     animation: typing 3s steps(40, end) forwards, typing-text 1s steps(40, end) forwards;
 }
@@ -200,7 +200,7 @@ h1 {
     animation: typing 3s steps(40, end) forwards, typing-text 6s steps(40, end) forwards;
 }
 
-/* Efecto de escribir letra por letra */
+/* para de escribir letra por letra */
 @keyframes typing-text {
     from {
         width: 0;
@@ -250,6 +250,21 @@ footer {
     margin: 0px;
 }
 
+/* Estilo para el contador de pagina */
+.pagination-info {
+    display: flex;
+    justify-content: center;
+}
+
+.pagination-info span  {
+    background-color: green; 
+    font-family: cursive;
+    font-weight: bold; 
+    border-radius: 50%; 
+    padding: 5px 10px; 
+}
+
+
 /* Estilo para el contenedor de los botones de paginación */
 .pagination-button {
     display: flex;
@@ -258,7 +273,7 @@ footer {
     margin-top: 20px;
 }
 
-/* Estilo para los botones de volver y siguiente */
+/* Estilo para los botones de volver, siguiente, primera pagina y ultima pagna */
 .button-prevnext {
     font-family: cursive;
     background-color: black;

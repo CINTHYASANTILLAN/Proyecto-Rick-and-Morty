@@ -13,20 +13,26 @@
             <h1>RICK AND MORTY</h1>
             <div id="menu" class="menu">
                 <button data-gender="todos">Todos</button>
-                <button data-gender="female">Female</button>
-                <button data-gender="male">Male</button>
-                <button data-gender="genderless">Genderless</button>
-                <button data-gender="unknown">Unknown</button>
+                <button data-gender="female">Mujeres</button>
+                <button data-gender="male">Hombres</button>
+                <button data-gender="genderless">Sin genero</button>
+                <button data-gender="unknown">Desconocido</button>
             </div>
         </div>
     </header>
     <div class="container" id="container">
-      
+    </div>
+
+       <div class="pagination-info">
+        <span id="currentPageNumber"> 01</span>
     </div>
     <div class="pagination-button">
+        <button id="firstPageButton" class="button-prevnext"><<<</button>
         <button id="prevButton" class="button-prevnext">Anterior</button>
         <button id="nextButton" class="button-prevnext">Siguiente</button>
+        <button id="lastPageButton" class="button-prevnext">>>></button>
     </div>
+    
     <footer>
         <div class="container-footer">
             <p>Cinthya Santillan 2023</p>
