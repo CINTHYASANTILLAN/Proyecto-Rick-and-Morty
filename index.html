@@ -4,17 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imagenes/favicon.png">
     <title>Rick and Morty</title>
 </head>
 <body>
     <header>
-        <h1>RICK AND MORTY</h1>
-        <radiobutton id="Buttonfilter" class="button">Filtrar por Género</radiobutton>
+        <div class="menu-container">
+            <h1>RICK AND MORTY</h1>
+            <div id="menu" class="menu">
+                <button data-gender="todos">Todos</button>
+                <button data-gender="female">Female</button>
+                <button data-gender="male">Male</button>
+                <button data-gender="genderless">Genderless</button>
+                <button data-gender="unknown">Unknown</button>
+            </div>
+        </div>
     </header>
     <div class="container" id="container">
       
     </div>
-    <div class="container-button">
+    <div class="pagination-button">
         <button id="prevButton" class="button-prevnext">Anterior</button>
         <button id="nextButton" class="button-prevnext">Siguiente</button>
     </div>
@@ -31,9 +40,7 @@
             </div>
         </div>
     </footer>
-    
-    
+
     <script src="script.js"></script>
 </body>
 </html>
-
