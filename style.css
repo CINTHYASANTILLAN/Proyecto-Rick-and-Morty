@@ -46,16 +46,6 @@ h1 {
     overflow: auto; 
 }
 
-@media (max-width: 768px) {
-    #container {
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); }
-
-    .card {
-        width: 100%;
-        max-width: 300px; 
-    }
-}
-
 /* Estilo para las tarjetas de personajes */
 .card {
     position: relative;
@@ -290,30 +280,38 @@ footer {
     color: white;
 }
 
+
+
 /* para hacer responsive la pagina */
+
 @media (max-width: 768px) {
     .menu-container {
         flex-direction: column;
         text-align: center;
     }
 
-    .menu {
-        flex-direction: column;
-    }
-
     .menu button {
-        margin-right: 0;
-        margin-bottom: 10px;
+        font-size: 14px;
+        padding: 5px 10px;
     }
 
     .card {
-        width: calc(50% - 20px);
+        width: calc(50% - 20px); 
+        max-width: none; 
     }
 
     .card-image img {
         width: 100%;
-        max-width: 300px;
+        max-width: 100%; 
         height: auto;
+    }
+
+    .card h2 {
+        font-size: 18px; 
+    }
+
+    .card p {
+        font-size: 14px; 
     }
 }
 
@@ -337,4 +335,17 @@ footer {
         flex-direction: column;
         text-align: center;
     }
+}
+
+@media (max-width: 768px) {
+    #container {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 2fr)); }
+
+    .card {
+        width: 100%;
+        max-width: 300px; 
+    }
+
+    
+    
 }

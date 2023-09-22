@@ -125,6 +125,7 @@ lastPageButton.addEventListener("click", () => {
 
 // Función para mostrar la descripción detallada de un personaje.
 const verDescription = characterUrl => {
+ 
     // Realizo una solicitud a la URL del personaje para obtener su información detallada.
     fetch(characterUrl)
         .then(res => res.json()) // Convierto la respuesta en JSON.
